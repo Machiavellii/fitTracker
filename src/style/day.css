@@ -1,0 +1,82 @@
+.dayPage {
+  max-width: 80%;
+  background-color: var(--back-color);
+  margin: auto;
+  padding: 1rem;
+}
+
+.dayPage header {
+  background-color: var(--light-back-color);
+  color: var(--light-color);
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.dayPage .backBtn {
+  color: var(--light-color);
+  font-size: 2rem;
+}
+
+.dayPage .dateInfo {
+  margin: auto;
+}
+
+.content {
+  background: var(--light-color);
+  border-radius: 20px;
+  padding: 1rem 0;
+}
+
+.content-steps {
+  text-align: center;
+  font-size: 1.5rem;
+  display: flex;
+}
+
+.steps-describe {
+  margin: auto;
+  border: 5px solid var(--back-color);
+  border-radius: 50%;
+  padding: 3rem;
+  animation: spin 0.5s linear;
+}
+
+@keyframes spin {
+  0% {
+    border: 0px solid var(--back-color);
+  }
+
+  100% {
+    border-block-end: 100;
+    border: 5px solid var(--back-color);
+  }
+}
+
+.steps-describe i {
+  background: #59c5b8;
+  color: var(--light-color);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+.steps-describe h6 {
+  color: #585353;
+}
+
+.steps-describe p {
+  font-weight: 800;
+  color: var(--dark-color);
+  font-size: 2rem;
+}
+
+.report {
+  display: flex;
+  justify-content: space-around;
+  color: var(--back-color);
+  text-align: center;
+}
+.report p {
+  font-size: 2rem;
+  font-weight: 700;
+}

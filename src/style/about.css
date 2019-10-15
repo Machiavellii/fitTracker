@@ -1,0 +1,7 @@
+.about {
+  max-width: 80%;
+  background-color: var(--back-color);
+  margin: auto;
+  padding: 1rem;
+  color: var(--light-color);
+}

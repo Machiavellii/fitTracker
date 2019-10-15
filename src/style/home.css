@@ -1,0 +1,83 @@
+.home {
+  max-width: 80%;
+  background-color: var(--back-color);
+  margin: auto;
+  padding: 1rem;
+}
+
+.home header {
+  background-color: var(--light-color);
+  color: var(--back-color);
+  border-radius: 20px;
+  padding: 1.5rem;
+}
+
+.days div {
+  text-align: center;
+  border-radius: 30%;
+  background-color: var(--light-back-color);
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.days div:hover {
+  background: var(--light-color);
+  color: var(--back-color);
+}
+
+.days a {
+  color: var(--light-color);
+}
+
+.days a span {
+  display: block;
+}
+
+.home {
+  color: var(--light-color);
+}
+
+.home i {
+  padding: 1rem;
+  background-color: #84d6ca;
+  border-radius: 50%;
+  font-size: 2rem;
+}
+
+.activity {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity,
+.steps,
+.calories {
+  padding: 1.5rem;
+  background-color: var(--light-back-color);
+  border-radius: 20px;
+}
+
+.steps,
+.calories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.p-text {
+  color: var(--light-color);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.value-holder {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
