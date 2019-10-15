@@ -387,14 +387,8 @@ table th {
 }
 
 .active {
-  background: var(--light-color) !important;
-
-  border-radius: 50%;
-}
-
-.act {
-  background: var(--light-color) !important;
-  color: var(--back-color);
+  color: var(--dark-color) !important;
+  background-color: #e4dfdf;
 }
 
 /* Mobile Styles */

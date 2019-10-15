@@ -1,11 +1,10 @@
 import React, { useContext } from 'react';
+import '../../style/day.css';
 
 import FittrackContex from '../../contex/fitnesstrack/fittrackContext';
 import Spinner from '../layout/Spinner';
 
 import DayItem from './DayItem';
-
-import '../../style/day.css';
 
 const Day = () => {
   const fittrackContext = useContext(FittrackContex);

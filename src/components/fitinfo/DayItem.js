@@ -6,12 +6,12 @@ import moment from 'moment';
 import { showtime, totalKm, caloriesBurned } from '../../contex/helper';
 
 const DayItem = ({ steps, info }) => {
-  const day = info.map(dayy => {
-    return moment(dayy.timestamp).format('dddd');
+  const day = info.map(day => {
+    return moment(day.timestamp).format('dddd');
   });
 
-  const month = info.map(dayy => {
-    return moment(dayy.timestamp).format('MMMM Do, YYYY');
+  const month = info.map(monyea => {
+    return moment(monyea.timestamp).format('MMMM Do, YYYY');
   });
 
   return (

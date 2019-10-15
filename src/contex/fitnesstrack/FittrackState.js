@@ -4,18 +4,12 @@ import FittrackContex from './fittrackContext';
 import FittrackReducer from './fittrackReducer';
 import moment from 'moment';
 
-import {
-  GET_FITNESSDATA,
-  CLEAR_FITNESSDATA,
-  SET_LOADING,
-  DAYS_INFO
-} from '../types';
+import { GET_FITNESSDATA, SET_LOADING, DAYS_INFO } from '../types';
 
 const FittrackState = props => {
   const initialState = {
     fitnessData: [],
     daysInfo: [],
-
     loading: false
   };
 
@@ -47,9 +41,6 @@ const FittrackState = props => {
     });
   };
 
-  // Clear Data
-  const clearData = () => dispatch({ type: CLEAR_FITNESSDATA });
-
   // Set Loading
   const setLoading = () => dispatch({ type: SET_LOADING });
 
@@ -59,7 +50,6 @@ const FittrackState = props => {
         fitnessData: state.fitnessData,
         loading: state.loading,
         daysInfo: state.daysInfo,
-        clearData,
         getData,
         showDayInfo
       }}

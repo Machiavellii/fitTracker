@@ -1,61 +1,48 @@
-import React, { useContext, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import FittrackContex from '../../contex/fitnesstrack/fittrackContext';
 
 const DaysNav = () => {
-  let [addClass] = useState('');
-  let [addClass1] = useState('');
-  let [active, setActive] = useState(false);
-
   const fittrackContext = useContext(FittrackContex);
 
   const { showDayInfo } = fittrackContext;
 
-  addClass = e => {
-    setActive((active = !active));
-    console.log(e.target.className);
-  };
-
-  addClass1 = e => {
-    setActive((active = !active));
-  };
-
   return (
     <div className="days grid-5 text-center mb-1">
-      <NavLink to="/day" onClick={showDayInfo.bind(this, '10 Jun 2019')}>
-        <div className="mon">
+      <Link to="/day" onClick={showDayInfo.bind(this, '10 Jun 2019')}>
+        <div>
           <span>10</span>
           <span>MON</span>
         </div>
-      </NavLink>
+      </Link>
 
-      <NavLink to="/day" onClick={showDayInfo.bind(this, '11 Jun 2019')}>
-        <div className="tue">
+      <Link to="/day" onClick={showDayInfo.bind(this, '11 Jun 2019')}>
+        <div>
           <span>11</span>
           <span>TUE</span>
         </div>
-      </NavLink>
+      </Link>
 
-      <NavLink to="/day" onClick={showDayInfo.bind(this, '12 Jun 2019')}>
-        <div className="wed">
+      <Link to="/day" onClick={showDayInfo.bind(this, '12 Jun 2019')}>
+        <div>
           <span>12</span>
           <span>WED</span>
         </div>
-      </NavLink>
+      </Link>
 
-      <NavLink to="/day" onClick={showDayInfo.bind(this, '13 Jun 2019')}>
-        <div className="thu">
+      <Link to="/day" onClick={showDayInfo.bind(this, '13 Jun 2019')}>
+        <div>
           <span>13</span>
           <span>THU</span>
         </div>
-      </NavLink>
+      </Link>
 
-      <NavLink to="/day" onClick={showDayInfo.bind(this, '14 Jun 2019')}>
-        <div className="fri">
+      <Link to="/day" onClick={showDayInfo.bind(this, '14 Jun 2019')}>
+        <div>
           <span>14</span>
           <span>FRI</span>
         </div>
-      </NavLink>
+      </Link>
     </div>
   );
 };

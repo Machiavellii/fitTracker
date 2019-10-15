@@ -1,9 +1,4 @@
-import {
-  GET_FITNESSDATA,
-  SET_LOADING,
-  DAYS_INFO,
-  CLEAR_FITNESSDATA
-} from '../types';
+import { GET_FITNESSDATA, SET_LOADING, DAYS_INFO } from '../types';
 
 export default (state, action) => {
   switch (action.type) {
@@ -22,14 +17,6 @@ export default (state, action) => {
       return {
         ...state,
         daysInfo: action.payload,
-        loading: false
-      };
-
-    case CLEAR_FITNESSDATA:
-      return {
-        ...state,
-        fitnessData: [],
-        daysInfo: [],
         loading: false
       };
 
