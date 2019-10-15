@@ -23,14 +23,14 @@ const DaysNav = () => {
   return (
     <div className="days grid-5 text-center mb-1">
       <NavLink to="/day" onClick={showDayInfo.bind(this, '10 Jun 2019')}>
-        <div className={`mon ${active ? 'act' : ''}`} onClick={addClass}>
+        <div className="mon">
           <span>10</span>
           <span>MON</span>
         </div>
       </NavLink>
 
       <NavLink to="/day" onClick={showDayInfo.bind(this, '11 Jun 2019')}>
-        <div className={`tue ${active ? 'act' : ''}`} onClick={addClass1}>
+        <div className="tue">
           <span>11</span>
           <span>TUE</span>
         </div>
